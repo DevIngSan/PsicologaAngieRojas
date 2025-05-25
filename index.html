@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicologa Angie Rojas Forigua</title>
+    <!--links de boostrap-->
+    <link rel="icon" href="/favicon_io/android-chrome-512x512.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!--styles-->
+    <link rel="stylesheet" href="/CSS/styles.css">
+
+<!-- JS de Bootstrap (opcional, para funcionalidades como modales, tooltips, etc.) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoYz1HiPTi0zS3N1z9j+6U8zjzvW3z3E+n/tG/nUj5p5wFi" crossorigin="anonymous"></script>
+
+
+<!-- Favicon para navegadores -->
+<link rel="icon" href="/favicon_io/android-chrome-512x512.png" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/android-chrome-512x512.png">
+<!--Favicon para dispositivos Apple -->
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+
+</head>
+<body>
+<!--Barra de navegacion-->
+ <!--barra de navegacion-->
+ <nav class="navbar navbar-expand-lg navbar-dark fixed-top mi-navbar">
+
+    <div class="container-fluid">
+        <a href="#" class=" navbar-brand"> 
+            <img src="/imagenes/logo ANRO.png" alt="Logo" class="logo-navbar">
+        <span class="text-primary">Psicoterapia</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+            aria-controls="navbarS" aria-expanded="false" aria-label="toggle navigation" color=#25D366>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarS">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="/HTML/index.html" class="nav-link">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#SOBRE-MI" class="nav-link">SOBRE MÍ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#SERVICIOS" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      SERVICIOS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/HTML/terapia_individual.html">Terapia individual</a></li>
+                      <li><a class="dropdown-item" href="/HTML/terapia_familiar_pareja.html">Terapia familiar y de pareja</a></li>
+                      <li><a class="dropdown-item" href="/HTML/Atención_crisis_emocionales.html">Atención en crisis emocionales</a></li>
+                      <li><a class="dropdown-item" href="/HTML/adicciones.html">Adicciones</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item">
+                    <a href="#TESTIMONIOS" class="nav-link">TESTIMONIOS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#CONTACTO" class="nav-link">CONTACTO</a>
+                </li>
+                <li class="nav-item-agenda-cita">
+                    <a href="https://api.whatsapp.com/send/?phone=573502956109&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-outline-primary rounded-pill ms-2 mi-boton">
+                      Agenda tu cita
+                    </a>
+                  </li>
+        </div>
+    </div>
+
+</nav>
+<!-- Carrusel de imágenes -->
+<section id="INICIO">
+<div>
+    <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
+    
+        <!-- Indicadores del carrusel -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    
+        <!-- Contenido del carrusel -->
+        <div class="carousel-inner">
+    
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="/imagenes/2.-Psicologia.png" class="d-block w-100" alt="Imagen principal">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-carousel">ANSIEDAD</h5>
+                    <p class="texto-carousel">La ansiedad afecta a más de 280 millones de personas en todo el mundo.
+                        Aunque es una reacción normal ante situaciones de estrés, cuando la ansiedad se vuelve persistente o excesiva puede afectar significativamente la vida diaria, el bienestar emocional y la salud física.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="/imagenes/Dia-psicologo-Universidad-Ean-banner.webp" class="d-block w-100" alt="Bombonera">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-carousel">TRASTORNOS</h5>
+                    <p class="texto-carousel">Los trastornos mentales afectan a millones de personas en todo el mundo.
+                        Entre los más comunes se encuentran el trastorno obsesivo-compulsivo (TOC), trastorno límite de la personalidad (TLP), depresión, bipolaridad y trastornos de ansiedad. Estos trastornos pueden impactar profundamente el bienestar emocional, las relaciones y la vida diaria.
+                        </p>
+                </div>
+            </div>
+    
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="/imagenes/default.jpg" class="d-block w-100" alt="Homer Simpson">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-carousel">TERAPIAS</h5>
+                    <p class="texto-carousel">Terapias personalizadas para tu bienestar emocional
+                        Las terapias psicológicas son espacios seguros donde puedes explorar tus emociones, pensamientos y comportamientos con la guía profesional que necesitas. Ofrecemos enfoques como la terapia cognitivo-conductual, terapia sistémica y terapias integrativas, adaptadas a tus necesidades individuales, familiares o de pareja.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselE" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselE" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+</section>
+    <div class=""container-fluid></div>
+    <!--SECCION SOBRE MI-->
+    <section id="SOBRE-MI"></section>
+    <section class="about section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Imagen a la izquierda -->
+                <div class="col-lg-4 col-md-12 text-center mb-4 mb-lg-0">
+                    <img src="/imagenes/logo ANRO.png" class="img-fluid" alt="LOGO_PSICO_ANRO">
+                </div>
+                <!-- Texto a la derecha -->
+                
+                <div class="col-lg-8 col-md-12">
+                    <div class="about-text text-black">
+                        <h2>SOBRE MÍ</h2>
+                        <div class="parrafos">
+                            <p class="texto-justificado"> 
+                                Soy psicóloga clínica y organizacional con una profunda vocación por acompañar a las personas en sus procesos de cambio y bienestar emocional. A lo largo de mi trayectoria, he trabajado en el tratamiento de trastornos mentales como el trastorno obsesivo-compulsivo (TOC), trastorno límite de la personalidad (TLP), depresión, ansiedad, bipolaridad, así como en procesos de rehabilitación por adicciones. 
+                                Mi experiencia incluye también terapias familiares, atención a crisis emocionales y contención psicológica en momentos difíciles, siempre con un enfoque humano, ético y cercano.
+                                Atiendo en modalidad de consulta externa, aplicando herramientas del enfoque cognitivo-conductual y sistémico, lo que me permite adaptarme a las necesidades de cada persona, familia o grupo, integrando distintas miradas para lograr intervenciones efectivas y sostenibles.
+                                Además de mi práctica clínica, cuento con experiencia en el área organizacional, promoviendo el bienestar psicológico en entornos laborales, facilitando procesos de selección, evaluación y acompañamiento psicosocial.
+                                Mi compromiso es ofrecer un espacio seguro, confidencial y profesional donde puedas sentirte escuchado, comprendido y acompañado en tu camino hacia una vida más plena y equilibrada.
+                            
+                            </p>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+            </div>
+        </div>
+    </section>
+    <section id="TESTIMONIOS">    
+    <section class="team section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center text-black pb-5">
+                        <h2>TESTIMONIOS</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+    
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center mi-card">
+                        <div class="card-body text-white">
+                            <img src="/imagenes/avatar-of-a-man-portrait-of-a-young-guy-illustration-of-male-character-in-modern-color-style-vector.jpg" class="img-fluid" alt="Duvan C">
+                            
+                            <p class="card-text">"Llegué al consultorio de la doctora Angie en uno de los momentos más difíciles de mi vida. Estaba luchando contra una fuerte ansiedad que me impedía trabajar y relacionarme con los demás. Desde el primer día, sentí un espacio seguro donde no era juzgado, sino escuchado y comprendido. Gracias a su acompañamiento, herramientas prácticas y su enfoque cognitivo-conductual, aprendí a reconocer mis pensamientos negativos y gestionarlos. Hoy me siento más tranquilo, funcional y con ganas de seguir creciendo. Le debo mucho a la doctora Angie, porque no solo me ayudó a recuperar el control de mi vida, sino también la confianza en mí mismo." <br>— Duván M.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center mi-card">
+                        <div class="card-body text-white">
+                            <img src="/imagenes/male-avatar-portrait-of-a-young-man-with-a-beard-illustration-of-male-character-in-modern-color-style-vector.jpg" class="img-fluid" alt="Samuel C">
+                            
+                            <p class="card-text">"Durante años estuve atrapado en una adicción que afectó mi salud, mi familia y mi vida laboral. Había intentado salir por mi cuenta, pero siempre recaía. Fue gracias a la orientación y acompañamiento de la psicóloga Angie que empecé a entender el origen emocional de mi comportamiento. Su enfoque respetuoso, sin juicios, y las sesiones de contención me ayudaron a reconstruir mi vida paso a paso. Hoy llevo más de un año limpio, con nuevos hábitos y una visión distinta de mí mismo. Angie me dio herramientas, pero sobre todo esperanza." <br>
+                                — Samuel C.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center mi-card">
+                        <div class="card-body text-white">
+                            <img src="/imagenes/pngtree-user-profile-avatar-png-image_10211467.png" class="img-fluid" alt="Fredy G">
+                            
+                            <p class="card-text">"Estaba pasando por una depresión silenciosa. Me sentía vacío, agotado y sin propósito, pero no sabía cómo pedir ayuda. Acudir a la consulta de Angie fue un punto de inflexión. A través de sus terapias, logré identificar lo que estaba cargando emocionalmente y aprendí a manejar mis pensamientos de una forma más saludable. Su enfoque profesional, cálido y comprometido me devolvió las ganas de vivir. Hoy me siento más fuerte, más conectado conmigo mismo y agradecido por haber tomado esa decisión."<br>
+                                — Fredy A.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center mi-card">
+                        <div class="card-body text-white">
+                            <img src="/imagenes/istockphoto-1465504312-612x612.jpg" class="img-fluid" alt="Briam M">
+                            
+                            <p class="card-text">"Nuestra relación estaba al borde de romperse. Los conflictos eran constantes y no lográbamos comunicarnos sin herirnos. Decidimos buscar ayuda y encontramos a la psicóloga Angie. Desde el inicio nos ayudó a escuchar con empatía, expresar sin atacar y reconstruir el vínculo desde el respeto y la comprensión. Gracias a su enfoque sistémico, pudimos ver no solo los problemas individuales, sino la dinámica que los alimentaba. Hoy no somos perfectos, pero tenemos herramientas, acuerdos claros y un cariño renovado. Fue una decisión que salvó no solo nuestra relación, sino nuestra familia." <br>
+                                — Johan y Camila</p>
+
+                        </div>
+                    </div>
+                </div>
+    </section>
+    
+    <!--CONTACTO-->
+    <section id="CONTACTO"></section>
+    <section class="about section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Imagen a la izquierda -->
+                <div class="col-lg-4 col-md-12 text-center mb-4 mb-lg-0">
+                    <img src="/imagenes/psicologiaint1.jpg" class="img-fluid" alt="LOGO PSICO ANRO">
+                </div>
+                <!-- Texto a la derecha -->
+                
+                <div class="col-lg-8 col-md-12">
+                    <div class="about-text text-black">
+                        <h2>CONTACTO</h2>
+                        <div class="parrafos">
+                            <p class="texto-justificado"> 
+                                Como psicóloga clínica y organizacional, Angie Rojas ofrece un acompañamiento integral, humano y ético, enfocado en el bienestar emocional, personal y familiar. Sus servicios están dirigidos a adolescentes, adultos, parejas y grupos, y se desarrollan desde un enfoque cognitivo-conductual y sistémico, adaptándose a las necesidades particulares de cada persona.
+                            
+                            </p>
+                        </div> 
+                         <div class="nav-item">
+                                <a href="https://api.whatsapp.com/send/?phone=573502956109&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-outline-primary rounded-pill ms-2 mi-boton">
+                                  Agenda tu cita
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </div>
+    </section>
+    
+    
+    </section>
+                    
+        <footer class="footer">
+            <div class="container px-4 col-12">
+                <div class="row">
+                    <div class="col-6 col-lg-4">
+                        <h3 class="pt-3 fw-bold"></h3>
+                        <img src="/imagenes/logo ANRO.png" alt="LOGO_PSICO_ANRO" class="img-fluid mb-2">
+                    </div>
+                    <div class="col col-lg-4">
+                        <h4 class="pt-3 fw-bold">CONTACTO</h4>
+                        <ul class="list-unstyled">
+                            <i class="bi bi-phone"></i><a href="#" class="text-decoration-none text-light">agregar telefono</a></li>
+                            <li><i class="bi bi-envelope"></i><a href="#" class="text-decoration-none text-light">Nagregar mail</a></li>
+                            <li><i class="bi bi-clock"></i><a href="#" class="text-decoration-none text-light">agregar horarios de atencion</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-6 col-lg-3 text-lg-end">
+                        <h4 class="pt-3 fw-bold">Social Media</h4>
+                        <div>
+                            <a href="https://www.instagram.com/psico.angierojas/" target="_blank" class="text-decoration-none text-light"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@psicloga.angie.ro?_t=ZS-8weowePPGV8&_r=1" class="text-decoration-none text-light" target="_blank" ><i class="bi bi-tiktok"></i></a>
+                            <a href="https://www.linkedin.com/in/angie-lilian-rojas-0b83951a2/" class="text-decoration-none text-light" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="text-decoration-none text-light" target="_blank"><i class="bi bi-youtube"></i></a>
+                            <a href="#" class="text-decoration-none text-light" target="_blank"><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr> 
+                <div class="d-flex justify-content-between">
+                    <p>
+                        2025 Todos los Derechos Reservados
+                    </p>
+                </div>
+            </div>
+        </footer>
+    
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous">
+        </script>
+    </body>
+    
+    </html>
+    <a href="https://api.whatsapp.com/send/?phone=573502956109&text&type=phone_number&app_absent=0" 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="Contáctame por WhatsApp">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+</a>
+
+</body>
+</html>
