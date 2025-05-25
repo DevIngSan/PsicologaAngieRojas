@@ -1,0 +1,252 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{ 
+    background: #ffffff;
+}
+
+
+.carousel-container {
+    border: 5px solid #333; /* Color y grosor del borde */
+    border-radius: 10px;    /* Bordes redondeados */
+    padding: 10px;         /* Espacio interno entre el contenido y el borde */
+    margin: 20px auto;     /* Centrar el contenedor horizontalmente */
+    max-width: 90%;        /* Limita el ancho del carrusel para pantallas grandes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
+
+.section-padding{
+    padding: 70px 0;}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+.carousel-caption {
+    position: absolute;
+    bottom: 10px; /* Ajusta la distancia desde el borde inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: rgb(255, 255, 255); /* Asegúrate de que el texto sea visible */
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    
+}
+.carousel-caption p{
+
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Opcional: bordes redondeados */
+    
+}
+.carousel-caption{
+    width: 60%;
+    font-size: 18px;
+    line-height: 1.9;
+    
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0 ;
+    left:0 ;
+    background:rgba(0, 30, 82, 0.327) ;
+    z-index: 1;
+}
+.carousel-item img {
+    height: 500px; /* o el alto que desees */
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+
+
+/* Estilos para el texto */
+.titulo-carousel {
+    font-size: 2rem; /* Tamaño grande en pantallas mayores */
+    font-weight: bold;
+    
+}
+
+.texto-carousel {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+/*NAVBAR*/
+.mi-navbar {
+    background-color: rgba(255, 255, 255, 0.892);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #333333;
+
+}
+.text-primary {
+    color: #333333 !important; /* Cambia el color primario a dorado */
+}
+
+.navbar-brand {
+    color: #333333;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.navbar-dark .nav-link:hover {
+    color: #f5cc16; /* Dorado al pasar el mouse */
+  }
+ 
+  .logo-navbar {
+    width: 120px;   /* Ajusta según necesidad */
+    height: auto;  /* Mantiene proporción */
+    object-fit: contain; /* Asegura que no se deforme */
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23333333' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .navbar-toggler {
+    background-color: transparent; /* o #fff si prefieres blanco */
+    border: none;
+  }
+  
+  .mi-boton {
+    color: #333333;             /* Cambia el color del texto */
+    border-color: #333333;      /* Cambia el color del borde */
+  }
+  
+  .mi-boton:hover {
+    background-color: #333333;  /* Fondo al pasar el mouse */
+    color: white;               /* Texto en hover */
+    border-color: #333333;      /* Borde en hover */
+  }
+  
+  
+ 
+
+.about .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados opcionales */
+}
+
+.about .about-text {
+    padding: 20px;
+}
+
+@media (max-width: 991px) {
+    .about .row {
+        flex-direction: column; /* Pila vertical en pantallas pequeñas */
+    }
+
+    .about .col-lg-4,
+    .about .col-lg-8 {
+        text-align: center;
+    }
+
+    .about .about-text {
+        padding-top: 10px;
+    }
+}
+
+.parrafos .texto-justificado {
+    text-align: justify; /* Justifica el texto */
+    color: black;        /* Asegura que el texto sea negro */
+    line-height: 1.6;    /* Espaciado entre líneas para mejorar legibilidad */
+    margin-bottom: 20px; /* Espacio entre párrafos */
+    font-size: 20px;
+}
+
+.mi-card {
+    height: 100%;
+    min-height: 420px; /* o el alto que necesites */
+    font-size: 13px;
+    text-align: justify; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #2c3e50; /* Ejemplo: azul oscuro */
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+.img-fluid{
+    border-radius: 160px;
+}
+
+
+@media (max-width: 768px) {
+    .carousel-container {
+        padding: 5px; /* Reduce el espacio interno en dispositivos pequeños */
+        border-width: 3px; /* Ajusta el grosor del borde */
+    }
+}
+
+/* Asegura que el footer ocupe todo el ancho de la pantalla */
+.footer {
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    background-color: #333333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 20px 0; /* Espaciado vertical */
+}
+
+/* Asegura que las imágenes se ajusten y tengan un margen inferior */
+.footer img {
+    max-width: 100%; /* Hace que las imágenes no excedan el ancho de su contenedor */
+    height: auto; /* Mantiene las proporciones */
+    margin-bottom: 10px; /* Añade un margen entre las imágenes */
+}
+
+/* Asegura que el texto esté alineado correctamente */
+.footer .d-flex {
+    align-items: center;
+}
+
+/* Asegura que el texto en el pie de página se vea bien en pantallas pequeñas */
+.footer p {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Agrega un margen adicional entre los enlaces del menú */
+footer ul li {
+    margin-bottom: 10px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .whatsapp-float img {
+    width: 35px;
+    height: 35px;
+  }
+  
