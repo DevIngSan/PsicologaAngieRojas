@@ -72,7 +72,7 @@ body{
   }
 
 
-/* Estilos para el texto */
+/* Estilos para el texto del carousel*/
 .titulo-carousel {
     font-size: 2rem; /* Tamaño grande en pantallas mayores */
     font-weight: bold;
@@ -87,7 +87,7 @@ body{
 
 /*NAVBAR*/
 .mi-navbar {
-    background-color: rgba(255, 255, 255, 0.892);
+    background-color: rgba(255, 255, 255, 0.792);
     backdrop-filter: blur(5px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
@@ -250,3 +250,24 @@ footer ul li {
     height: 35px;
   }
   
+  .fondo-gris {
+     background-color: rgba(218, 165, 32, 0.5); /* Gris claro como el de la imagen */
+    border-radius: 25px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(218, 165, 32, 0.4);
+  }
+
+  body {
+  padding-top: 80px; /* Ajusta según la altura real de tu navbar */
+}
+
+
+.col-md-6 p {
+  text-align: justify;
+}
+.testimonios-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
