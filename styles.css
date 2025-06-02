@@ -271,3 +271,8 @@ footer ul li {
     justify-content: center;
     flex-wrap: wrap;
 }
+.nav-link.active-dropdown {
+  background-color: #343a40; /* o el color oscuro que prefieras */
+  color: #fff;
+  border-radius: 0.375rem;
+}
