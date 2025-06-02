@@ -298,5 +298,21 @@
   <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
 </a>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+
+    // Escuchamos clics en los elementos que sí deben cerrar el menú
+    document.querySelectorAll(".navbar-collapse .nav-link:not(.dropdown-toggle), .navbar-collapse .dropdown-item").forEach(function (link) {
+      link.addEventListener("click", function () {
+        // Solo cerramos si está visible
+        if (navbarCollapse.classList.contains("show")) {
+          new bootstrap.Collapse(navbarCollapse).toggle();
+        }
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
