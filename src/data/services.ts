@@ -1,3 +1,5 @@
+import { asset } from '../asset'
+
 export type Service = {
   path: string
   navLabel: string
@@ -12,7 +14,7 @@ export const services: Service[] = [
     path: '/terapia-individual',
     navLabel: 'Terapia individual',
     title: 'Terapia Individual',
-    image: '/imagenes/terapia individual.png',
+    image: asset('imagenes/terapia individual.png'),
     imageAlt: 'Terapia Individual',
     paragraphs: [
       'La terapia individual es un espacio confidencial y seguro donde podrás explorar tus emociones, pensamientos y comportamientos con el acompañamiento de una profesional capacitada.',
@@ -24,7 +26,7 @@ export const services: Service[] = [
     path: '/terapia-para-la-ansiedad',
     navLabel: 'Terapia para la ansiedad',
     title: 'Terapia para la Ansiedad',
-    image: '/imagenes/ansiedad.jpeg',
+    image: asset('imagenes/ansiedad.jpeg'),
     imageAlt: 'Terapia para la Ansiedad',
     paragraphs: [
       '¿Te sientes preocupado, con los nervios de punta o con la mente que no se detiene? La ansiedad puede manifestarse en tu cuerpo, en tu descanso y en la forma en que vives tu día a día, pero no tiene por qué tener la última palabra.',
@@ -37,7 +39,7 @@ export const services: Service[] = [
     path: '/atencion-en-crisis',
     navLabel: 'Atención en crisis emocionales',
     title: 'Atención en Crisis Emocionales',
-    image: '/imagenes/Familia.jpg',
+    image: asset('imagenes/Familia.jpg'),
     imageAlt: 'Atención en Crisis Emocionales',
     paragraphs: [
       'Las crisis emocionales pueden surgir de forma repentina por situaciones como pérdidas, rupturas, ansiedad intensa, ataques de pánico, estrés agudo o momentos de desbordamiento emocional. En estos momentos, contar con apoyo profesional es fundamental.',
@@ -48,7 +50,7 @@ export const services: Service[] = [
     path: '/terapia-para-la-depresion',
     navLabel: 'Terapia para la depresión',
     title: 'Terapia para la Depresión',
-    image: '/imagenes/Adicciones.jpeg',
+    image: asset('imagenes/Adicciones.jpeg'),
     imageAlt: 'Terapia para la Depresión',
     paragraphs: [
       '¿Te sientes vacío o con desesperanza? ¿Los días se te hacen difíciles por un cansancio que no te deja levantarte de la cama? ¿Sientes que ya nada te produce alegría? No tienes que atravesar esto solo.',

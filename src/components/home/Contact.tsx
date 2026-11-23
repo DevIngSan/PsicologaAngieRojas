@@ -1,3 +1,4 @@
+import { asset } from '../../asset'
 import { contact } from '../../data/home'
 import { site } from '../../data/site'
 
@@ -7,7 +8,7 @@ export function Contact() {
       <div className="container">
         <div className="row align-items-center g-5">
           <div className="col-lg-4 col-md-12">
-            <img src="/imagenes/psicologiaint1.jpg" className="contact-photo" alt="LOGO PSICO ANRO" />
+            <img src={asset('imagenes/psicologiaint1.jpg')} className="contact-photo" alt="LOGO PSICO ANRO" />
           </div>
           <div className="col-lg-8 col-md-12">
             <div className="contact-panel">

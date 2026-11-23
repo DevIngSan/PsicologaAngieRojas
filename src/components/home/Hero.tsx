@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { asset } from '../../asset'
 import { about } from '../../data/home'
 import { site } from '../../data/site'
 
@@ -26,7 +27,7 @@ export function Hero() {
             </div>
           </div>
           <div className="col-lg-6">
-            <img src="/imagenes/imagenpsicologa.jpeg" className="hero-photo" alt="Psicóloga Angie Rojas" />
+            <img src={asset('imagenes/imagenpsicologa.jpeg')} className="hero-photo" alt="Psicóloga Angie Rojas" />
           </div>
         </div>
       </div>

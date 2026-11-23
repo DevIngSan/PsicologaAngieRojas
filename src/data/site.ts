@@ -1,8 +1,10 @@
+import { asset } from '../asset'
+
 export const site = {
   name: 'Psicoterapia',
   title: 'Psicologa Angie Rojas Forigua',
-  logo: '/imagenes/Logo.png',
-  favicon: '/imagenes/favicon.png',
+  logo: asset('imagenes/Logo.png'),
+  favicon: asset('imagenes/favicon.png'),
   whatsappUrl:
     'https://api.whatsapp.com/send/?phone=573502956109&text&type=phone_number&app_absent=0',
   phoneDisplay: '350 2956109',
