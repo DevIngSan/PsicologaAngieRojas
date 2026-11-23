@@ -1,0 +1,387 @@
+:root {
+  --cream: #f6efe6;
+  --cream-deep: #efe2d4;
+  --sand: #fffaf5;
+  --ink: #3d2c29;
+  --ink-soft: #6d564e;
+  --terracotta: #c46b4a;
+  --terracotta-dark: #a35336;
+  --brown: #4a342c;
+  --line: rgba(74, 52, 44, 0.12);
+}
+
+* {
+  font-family: Outfit, "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  padding-top: 88px;
+}
+
+h1,
+h2,
+h3,
+h4,
+.navbar-brand {
+  font-family: Fraunces, Georgia, serif;
+  color: var(--ink);
+  letter-spacing: 0;
+}
+
+p {
+  color: var(--ink-soft);
+  line-height: 1.75;
+}
+
+.section-padding {
+  padding: 96px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2.75rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.btn-agenda,
+.btn-suave {
+  border-radius: 999px;
+  padding: 0.75rem 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-agenda {
+  background: var(--terracotta);
+  border: 1px solid var(--terracotta);
+  color: #fffaf5;
+}
+
+.btn-agenda:hover,
+.btn-agenda:focus {
+  background: var(--terracotta-dark);
+  border-color: var(--terracotta-dark);
+  color: #fffaf5;
+}
+
+.btn-suave {
+  background: transparent;
+  border: 1px solid var(--terracotta);
+  color: var(--ink);
+}
+
+.btn-suave:hover,
+.btn-suave:focus {
+  background: var(--cream-deep);
+  color: var(--ink);
+}
+
+.hero {
+  padding: 48px 0 24px;
+}
+
+.hero-kicker {
+  margin-bottom: 0.75rem;
+  color: var(--terracotta);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 1.12;
+  margin-bottom: 1.25rem;
+}
+
+.hero-lead {
+  font-size: 1.125rem;
+  max-width: 38rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.hero-photo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 28px;
+}
+
+.service-card {
+  position: relative;
+  z-index: 0;
+  height: 100%;
+  background: var(--sand);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(74, 52, 44, 0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.services-grid > [class*='col'] {
+  position: relative;
+  z-index: 0;
+}
+
+.services-grid > [class*='col']:hover {
+  z-index: 2;
+}
+
+.service-card:hover {
+  z-index: 2;
+  transform: translateY(-8px) scale(1.045);
+  box-shadow: 0 22px 44px rgba(74, 52, 44, 0.16);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.service-card-body {
+  padding: 1.25rem 1.25rem 1.5rem;
+}
+
+.service-card h3 {
+  font-size: 1.45rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-card p {
+  font-size: 0.98rem;
+}
+
+.service-card a {
+  color: var(--terracotta-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.service-card a:hover {
+  color: var(--terracotta);
+}
+
+.about-photo,
+.contact-photo,
+.service-photo {
+  width: 100%;
+  border-radius: 28px;
+  object-fit: cover;
+}
+
+.about-photo,
+.contact-photo,
+.service-photo {
+  max-height: 480px;
+}
+
+.about-text h2,
+.contact-panel h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1.25rem;
+}
+
+.about-text p + p,
+.service-copy p + p {
+  margin-top: 1rem;
+}
+
+.mi-card {
+  height: 100%;
+  background: var(--sand);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(74, 52, 44, 0.06);
+}
+
+.mi-card .card-body {
+  padding: 1.75rem;
+}
+
+.avatar-cita {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.mi-card .card-text {
+  color: var(--ink-soft);
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.contact-panel {
+  background: var(--sand);
+  border-radius: 28px;
+  padding: 2rem;
+  border: 1px solid var(--line);
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.contact-list li {
+  margin-bottom: 0.7rem;
+  color: var(--ink);
+}
+
+.contact-list i {
+  color: var(--terracotta);
+  margin-right: 0.45rem;
+}
+
+.mi-navbar {
+  background: rgba(246, 239, 230, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+
+.navbar-brand {
+  color: var(--ink);
+  font-size: 1.45rem;
+  font-weight: 650;
+}
+
+.navbar-brand span {
+  margin-left: 0.45rem;
+}
+
+.mi-navbar .navbar-nav .nav-link {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.mi-navbar .navbar-nav .nav-link:hover,
+.mi-navbar .navbar-nav .nav-link:focus,
+.mi-navbar .navbar-nav .show > .nav-link {
+  color: var(--terracotta);
+}
+
+.dropdown-menu {
+  background: var(--sand);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.dropdown-item {
+  color: var(--ink);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background: var(--cream-deep);
+  color: var(--terracotta-dark);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.nav-item-agenda-cita {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  background: var(--brown);
+  color: #f6efe6;
+  padding: 48px 0 24px;
+}
+
+.footer h4,
+.footer p,
+.footer li,
+.footer span {
+  color: #f6efe6;
+}
+
+.footer h4 {
+  font-family: Fraunces, Georgia, serif;
+}
+
+.footer img {
+  width: 96px;
+  height: auto;
+  border-radius: 18px;
+}
+
+.footer a {
+  color: #f6efe6;
+  font-size: 1.35rem;
+  margin-right: 0.85rem;
+}
+
+.footer hr {
+  border-color: rgba(246, 239, 230, 0.2);
+  opacity: 1;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.whatsapp-float img {
+  width: 34px;
+  height: 34px;
+}
+
+.service-page {
+  padding-top: 48px;
+}
+
+.service-copy h1 {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  margin-bottom: 1.25rem;
+}
+
+#sobre-mi,
+#servicios,
+#testimonios,
+#contacto {
+  scroll-margin-top: 100px;
+}
+
+@media (max-width: 991px) {
+  .hero-photo {
+    height: auto;
+    margin-top: 1.5rem;
+  }
+
+  .section-padding {
+    padding: 72px 0;
+  }
+
+  .nav-item-agenda-cita {
+    margin-top: 0.75rem;
+  }
+}
